@@ -1,0 +1,28 @@
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\bin\TH_Buoi2.dll.config
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\bin\TH_Buoi2.dll
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\bin\TH_Buoi2.pdb
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\obj\Debug\TH_Buoi2.dll
+C:\Users\TYTRUONG\Desktop\WedcuaTrung\TH_Buoi2\TH_Buoi2\obj\Debug\TH_Buoi2.pdb
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\bin\TH_Buoi2.dll.config
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\bin\TH_Buoi2.dll
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\bin\TH_Buoi2.pdb
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\obj\Debug\TH_Buoi2.dll
+C:\Users\TYTRUONG\Documents\GitHub\DA\PROJECT-DA_ASP\TH_Buoi2\obj\Debug\TH_Buoi2.pdb
+<<<<<<< Updated upstream:TH_Buoi2/obj/Debug/GUI.csproj.FileListAbsolute.txt
+=======
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\TH_Buoi2.dll.config
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\TH_Buoi2.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\TH_Buoi2.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\obj\Debug\GUI.csprojAssemblyReference.cache
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\obj\Debug\TH_Buoi2.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\obj\Debug\TH_Buoi2.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\BUS.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\DTO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\DAO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\BUS.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\DTO.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\bin\DAO.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\TH_Buoi2\obj\Debug\GUI.csproj.CopyComplete
+>>>>>>> Stashed changes:PROJECT-DA_ASP-Ty_Thinh_Trung/TH_Buoi2/obj/Debug/GUI.csproj.FileListAbsolute.txt

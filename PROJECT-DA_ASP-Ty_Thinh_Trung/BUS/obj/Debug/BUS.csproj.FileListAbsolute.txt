@@ -1,0 +1,10 @@
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\BUS.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\BUS.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\DAO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\DTO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\DAO.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\bin\Debug\DTO.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\obj\Debug\BUS.csproj.CopyComplete
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\obj\Debug\BUS.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\BUS\obj\Debug\BUS.pdb

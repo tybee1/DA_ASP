@@ -1,0 +1,5 @@
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DTO\bin\Debug\DTO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DTO\bin\Debug\DTO.pdb
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DTO\obj\Debug\DTO.dll
+E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DTO\obj\Debug\DTO.pdb
