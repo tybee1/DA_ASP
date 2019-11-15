@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using DAO;
+
 namespace BUS
 {
     public class SanPham_BUS
@@ -51,5 +52,6 @@ namespace BUS
             }
 
         }
+      
     }
 }

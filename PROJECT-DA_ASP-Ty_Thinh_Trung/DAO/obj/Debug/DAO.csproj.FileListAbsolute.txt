@@ -6,3 +6,11 @@ E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.csprojAssemblyRefe
 E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.csproj.CopyComplete
 E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.dll
 E:\LT_APS.NET\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.pdb
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.dll
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.pdb
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\bin\Debug\DAO.dll
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\bin\Debug\DAO.pdb
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\bin\Debug\DTO.dll
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\bin\Debug\DTO.pdb
+E:\LT_APS.NET\DA_ASP\PROJECT-DA_ASP-Ty_Thinh_Trung\DAO\obj\Debug\DAO.csproj.CopyComplete

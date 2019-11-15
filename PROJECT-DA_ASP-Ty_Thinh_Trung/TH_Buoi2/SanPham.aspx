@@ -35,6 +35,7 @@
     </div>
      <div class="col-lg-6">
          <asp:Button ID="btnThemSanPham" runat="server" Text="Thêm" OnClick="btnThemSanPham_Click1"  CssClass="col-lg-2 btn-lg btn-success" />
+         <asp:Button ID="btnCapNhat" runat="server" Text="Cập nhật"  CssClass="col-lg-2 btn-lg btn-warning" OnClick="btnCapNhat_Click" />
          </div>
 
      <div class="col-lg-12">

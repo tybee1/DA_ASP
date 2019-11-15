@@ -70,6 +70,8 @@ namespace TH_Buoi2
 
             if (e.CommandName == "ChonSP")
             {
+                chkTrangThai.Enabled = false;
+                txtMaSanPham.Enabled = false;
                 int MASP =Convert.ToInt32(e.CommandArgument.ToString());
                 SanPham_DTO sp = SanPham_BUS.LayThongTinSanPham(MASP);
                 if(sp != null)
@@ -94,6 +96,25 @@ namespace TH_Buoi2
                     Response.Write("<script>alert('Xoá tài khoản thất bại');</script>");
                 }
             }
+        }
+
+        protected void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            SanPham_DTO sp = new SanPham_DTO();
+            sp.MASP1 = Convert.ToInt32(txtMaSanPham.Text);
+            sp.TENSP1 = txtTenSanPham.Text;
+            sp.MOTA1 = txtMoTa.Text;
+            sp.LOAI1 = Convert.ToInt32(DropDownList1.SelectedValue);
+            sp.TRANGTHAI1 = chkTrangThai.Checked;
+            if (SanPham_BUS.CapNhatSanPham(sp))
+            {
+                LoadDanhSachSanPham();
+            }
+            else
+            {
+                Response.Write("<script>alert('Cập nhật sản phẩm thất bại');</script>");
+            }
+
         }
     }
 }

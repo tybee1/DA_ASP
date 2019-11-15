@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BUS;
 using DTO;
+
 namespace TH_Buoi2
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -26,12 +27,12 @@ namespace TH_Buoi2
             grvAccount.DataSource = TaiKhoan_BUS.LayDSTaiKhoan();
             grvAccount.DataBind();
         }
+       
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
             try
             {
-
                 TaiKhoan_DTO tk = new TaiKhoan_DTO();
                 tk.TENTK1 = txtTenTaiKhoan.Text;
                 tk.MATKHAU1 = txtMatKhau.Text;
@@ -64,7 +65,7 @@ namespace TH_Buoi2
             if (e.CommandName == "ChonTK")
             {
 
-                btnThem.Enabled = false;
+                btnThem.Visible = false;
                 btnSua.Visible = true;
                 btnSua.Enabled = true;
                 btnHuyBo.Visible = true;
@@ -116,6 +117,9 @@ namespace TH_Buoi2
             {
                 LoadDanhSachTaiKhoan();
                 XoaFrom();
+                btnHuyBo.Visible = false;
+                btnSua.Visible = false;
+                btnThem.Enabled = true;
             }
             else
             {
@@ -125,11 +129,12 @@ namespace TH_Buoi2
 
         protected void btnHuyBo_Click(object sender, EventArgs e)
         {      
-                btnThem.Enabled = true;
+               
+                 btnThem.Visible = true;
                  XoaFrom();
                 btnHuyBo.Visible = false;
                 btnSua.Visible = false;
-            txtTenTaiKhoan.Enabled = true;
+                txtTenTaiKhoan.Enabled = true;
         }
         public void XoaFrom()
         {

@@ -69,6 +69,15 @@ namespace TH_Buoi2
         protected global::System.Web.UI.WebControls.Button btnThemSanPham;
 
         /// <summary>
+        /// btnCapNhat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCapNhat;
+
+        /// <summary>
         /// grvSanPham control.
         /// </summary>
         /// <remarks>

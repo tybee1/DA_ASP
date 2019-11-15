@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using DTO;
 using System.Data.SqlClient;
 using System.Data;
-using System.Security.Cryptography;
+
 namespace DAO
 {
-   public class TaiKhoan_DAO
+    public class TaiKhoan_DAO
     {
         public static List<TaiKhoan_DTO> LayDSTaiKhoan()
         {
@@ -55,8 +55,6 @@ namespace DAO
         {
             string query = "INSERT INTO TAIKHOAN(TENTK,MATKHAU,EMAIL,SDT,DIACHI,HOTEN,LAADMIN,ANHDAIDIEN,TRANGTHAI) VALUES(@TENTK,@MATKHAU,@EMAIL,@SDT,@DIACHI,@HOTEN,@LAADMIN,@ANHDAIDIEN,@TRANGTHAI)";
             SqlParameter[] sqlParameters = new SqlParameter[9];
-            TENTK.MATKHAU1 = MD5Encode(TENTK.MATKHAU1);
-
             sqlParameters[0] = new SqlParameter("@TENTK", TENTK.TENTK1);
             sqlParameters[1] = new SqlParameter("@MATKHAU", TENTK.MATKHAU1);
             sqlParameters[2] = new SqlParameter("@EMAIL", TENTK.EMAIL1);
@@ -97,20 +95,8 @@ namespace DAO
             sqlParameters[0] = new SqlParameter("@TENTK", TENTK);
             return DataProvider.ExecuteUpdateQuery(query, sqlParameters) == 1;
         }
-        private static String MD5Encode(String input)
-        {
-            MD5 md5 = MD5.Create();
-
-            Byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(input));
-            StringBuilder result = new StringBuilder();
-            for (int i = 0; i < data.Length; i++)
-            {
-                result.Append(data[i].ToString("x2"));
-            }
-            return result.ToString();
-
-        }
+        
     }
 
 }
-}
+

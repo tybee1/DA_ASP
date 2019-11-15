@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using DAO;
-
+using System.Security.Cryptography;
 namespace BUS
 {
-   public class TaiKhoan_BUS
+    public class TaiKhoan_BUS
     {
-        public static bool KTDangNhap(string TENTK,string MATKHAU)
+        public static bool KTDangNhap(string TENTK, string MATKHAU)
         {
-            if(!TaiKhoan_DAO.KiemTraTaiKhoanTonTai(TENTK))            
+            if (!TaiKhoan_DAO.KiemTraTaiKhoanTonTai(TENTK))
                 return false;
-            return MATKHAU ==TaiKhoan_DAO.LayMatKhau(TENTK);   
+            return MATKHAU == TaiKhoan_DAO.LayMatKhau(TENTK);
         }
         public static List<TaiKhoan_DTO> LayDSTaiKhoan()
         {
@@ -44,5 +44,18 @@ namespace BUS
                 return false;
             return TaiKhoan_DAO.XoaTaiKhoan(tk);
         }
-     
+        public static String MD5Encode(String input)
+        {
+            MD5 md5 = MD5.Create();
+
+            Byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(input));
+            StringBuilder result = new StringBuilder();
+            for (int i = 0; i < data.Length; i++)
+            {
+                result.Append(data[i].ToString("x2"));
+            }
+            return result.ToString();
+
+        }
+    }    
 }
