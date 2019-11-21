@@ -22,10 +22,23 @@ namespace DAO
             }
             return lstTK;
         }
-        public static List<SanPham_DTO> LayDSSanPham2()
+        public static List<SanPham_DTO> LoadDSDprodownList()
         {
             string query = "SELECT * FROM LOAISP";
             SqlParameter[] param = new SqlParameter[0];
+            DataTable dtbKetQua = DataProvider.ExecuteSelectQuery(query, param);
+            List<SanPham_DTO> lstSanPham = new List<SanPham_DTO>();
+            foreach (DataRow dr in dtbKetQua.Rows)
+            {
+                lstSanPham.Add(ConvertToDTO2(dr));
+            }
+            return lstSanPham;
+        }
+        public static List<SanPham_DTO> LoadDSLOAISP(int ID)
+        {
+            string query = "SELECT * FROM LOAISP ID=@ID";
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@ID", ID);
             DataTable dtbKetQua = DataProvider.ExecuteSelectQuery(query, param);
             List<SanPham_DTO> lstSanPham = new List<SanPham_DTO>();
             foreach (DataRow dr in dtbKetQua.Rows)

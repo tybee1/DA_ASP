@@ -15,7 +15,7 @@ namespace TH_Buoi2
             if (!Page.IsPostBack)
             {
                 LoadDanhSachSanPham();
-                DropDownList1.DataSource = SanPham_BUS.LayDSSanPham2();
+                DropDownList1.DataSource = SanPham_BUS.LoadDSDprodownList();
                 DropDownList1.DataValueField = "ID1";
                 DropDownList1.DataTextField = "TENLOAI1";
                 DropDownList1.DataBind();
@@ -90,6 +90,7 @@ namespace TH_Buoi2
                 if (SanPham_BUS.XoaSanPham(MASP))
                 {
                    LoadDanhSachSanPham();
+                    XoaForm();
                 }
                 else
                 {
@@ -100,6 +101,7 @@ namespace TH_Buoi2
 
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
+            chkTrangThai.Enabled = true;
             SanPham_DTO sp = new SanPham_DTO();
             sp.MASP1 = Convert.ToInt32(txtMaSanPham.Text);
             sp.TENSP1 = txtTenSanPham.Text;
@@ -109,12 +111,25 @@ namespace TH_Buoi2
             if (SanPham_BUS.CapNhatSanPham(sp))
             {
                 LoadDanhSachSanPham();
+                XoaForm();
             }
             else
             {
                 Response.Write("<script>alert('Cập nhật sản phẩm thất bại');</script>");
             }
 
+        }
+
+        protected void btnHuyBo_Click(object sender, EventArgs e)
+        {
+            XoaForm();
+        }
+        public void XoaForm()
+        {
+            txtMaSanPham.Text = "";
+            txtTenSanPham.Text = "";
+            txtMoTa.Text = "";
+            txtMaSanPham.Enabled = true;
         }
     }
 }

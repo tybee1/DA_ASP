@@ -279,9 +279,11 @@
     <Content Include="assets\libs\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
     <Content Include="blog-detail.aspx" />
     <Content Include="blog.aspx" />
+    <Content Include="ChiTietSanPham.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="DangKi.aspx" />
     <Content Include="From_SanPham.aspx" />
+    <Content Include="HoaDon.aspx" />
     <Content Include="homepage-02.aspx" />
     <Content Include="homepage-03.aspx" />
     <Content Include="images\icons\favicon.png" />
@@ -386,6 +388,13 @@
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -406,6 +415,13 @@
     </Compile>
     <Compile Include="From_SanPham.aspx.designer.cs">
       <DependentUpon>From_SanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.aspx.cs">
+      <DependentUpon>HoaDon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoaDon.aspx.designer.cs">
+      <DependentUpon>HoaDon.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage-02.aspx.cs">
       <DependentUpon>homepage-02.aspx</DependentUpon>
