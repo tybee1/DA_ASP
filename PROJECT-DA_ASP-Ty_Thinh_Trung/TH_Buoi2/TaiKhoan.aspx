@@ -60,7 +60,7 @@
             <asp:CheckBox ID="chkLaAdmin" runat="server" />
         </div>
     </div>
-
+    
     <div class="form-group">
         <label for="text7" class="control-label col-lg-4">Ảnh đại diện</label>
         <div class="col-lg-12">
@@ -78,7 +78,7 @@
     <div class="col-lg-6">
         <asp:Button ID="btnThem" runat="server" Text="Thêm" CssClass="col-lg-2 btn-lg btn-success" OnClick="btnThem_Click" />
         <asp:Button ID="btnSua" runat="server" Text="Sửa" CssClass="col-lg-2 btn-lg btn-warning" OnClick="btnSua_Click" Visible="True" />
-        <asp:Button ID="btnHuyBo" runat="server" Text="Hủy bỏ" CssClass="col-lg-2 btn-lg btn-default" OnClick="btnHuyBo_Click" />
+        <asp:Button ID="btnHuyBo" runat="server" Text="Hủy bỏ" CssClass="col-lg-2 btn-lg btn-default" OnClick="btnHuyBo_Click"/>
     </div>
 
     <div class="col-lg-12">

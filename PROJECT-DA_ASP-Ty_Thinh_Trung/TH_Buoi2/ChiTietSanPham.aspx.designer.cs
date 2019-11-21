@@ -11,61 +11,61 @@ namespace TH_Buoi2
 {
 
 
-    public partial class index
+    public partial class ChiTietSanPham1
     {
 
         /// <summary>
-        /// ddlTimKiem control.
+        /// txtMaSanPham control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTimKiem;
+        protected global::System.Web.UI.WebControls.TextBox txtMaSanPham;
 
         /// <summary>
-        /// rptSanPham control.
+        /// txtID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSanPham;
+        protected global::System.Web.UI.WebControls.TextBox txtID;
 
         /// <summary>
-        /// lblTenSanPham control.
+        /// txtMauSac control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTenSanPham;
+        protected global::System.Web.UI.WebControls.TextBox txtMauSac;
 
         /// <summary>
-        /// Label1 control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// lblMoTa control.
+        /// txtGiaTien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMoTa;
+        protected global::System.Web.UI.WebControls.TextBox txtGiaTien;
 
         /// <summary>
-        /// btnAddToCart control.
+        /// txtTonKho control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddToCart;
+        protected global::System.Web.UI.WebControls.TextBox txtTonKho;
     }
 }

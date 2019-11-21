@@ -14,6 +14,7 @@ namespace BUS
         {
             if (!TaiKhoan_DAO.KiemTraTaiKhoanTonTai(TENTK))
                 return false;
+            MATKHAU=MD5Encode(MATKHAU);
             return MATKHAU == TaiKhoan_DAO.LayMatKhau(TENTK);
         }
         public static List<TaiKhoan_DTO> LayDSTaiKhoan()
@@ -24,12 +25,14 @@ namespace BUS
         {
             if (TaiKhoan_DAO.KiemTraTaiKhoanTonTai(tk.TENTK1))
                 return false;
+            tk.MATKHAU1 = MD5Encode(tk.MATKHAU1);
             return TaiKhoan_DAO.ThemTaiKhoan(tk);
         }
         public static bool CapNhatTaiKhoan(TaiKhoan_DTO tk)
         {
             if (!TaiKhoan_DAO.KiemTraTaiKhoanTonTai(tk.TENTK1))
                 return false;
+            tk.MATKHAU1 = MD5Encode(tk.MATKHAU1);
             return TaiKhoan_DAO.CapNhatTaiKhoan(tk);
         }
         public static TaiKhoan_DTO LayThongTinTaiKhoan(string tk)
@@ -47,7 +50,6 @@ namespace BUS
         public static String MD5Encode(String input)
         {
             MD5 md5 = MD5.Create();
-
             Byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(input));
             StringBuilder result = new StringBuilder();
             for (int i = 0; i < data.Length; i++)

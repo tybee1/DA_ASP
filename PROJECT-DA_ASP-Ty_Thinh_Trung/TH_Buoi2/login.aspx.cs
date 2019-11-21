@@ -24,7 +24,7 @@ namespace TH_Buoi2
                 cookie.Value = TENTK;
                 cookie.Expires = DateTime.Now.AddDays(14);
                 Response.Cookies.Add(cookie);
-                Response.Redirect("SanPham.aspx");
+                Response.Redirect("ChiTietSanPham.aspx");
             }
             else
             {

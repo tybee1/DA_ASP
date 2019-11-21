@@ -12,7 +12,10 @@ namespace TH_Buoi2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            chkTrangThai.Checked = true;
+            if (!Page.IsPostBack)
+            {
+                chkTrangThai.Checked = true;
+            }
         }
 
         protected void btnDangKi_Click(object sender, EventArgs e)
@@ -21,6 +24,7 @@ namespace TH_Buoi2
             {
                 
                 TaiKhoan_DTO dk = new TaiKhoan_DTO();
+                //dk.MATKHAU1 = TaiKhoan_BUS.MD5Encode(dk.MATKHAU1);
                 dk.TENTK1 = txtTenTaiKhoan.Text;
                 dk.MATKHAU1 = txtMatKhau.Text;
                 dk.EMAIL1 = txtEmail.Text;

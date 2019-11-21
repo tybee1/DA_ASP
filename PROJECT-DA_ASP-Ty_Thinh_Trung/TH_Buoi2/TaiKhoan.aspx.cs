@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BUS;
 using DTO;
-
+using System.IO;
 namespace TH_Buoi2
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -34,6 +34,7 @@ namespace TH_Buoi2
             try
             {
                 TaiKhoan_DTO tk = new TaiKhoan_DTO();
+            
                 tk.TENTK1 = txtTenTaiKhoan.Text;
                 tk.MATKHAU1 = txtMatKhau.Text;
                 tk.EMAIL1 = txtEmail.Text;
@@ -42,6 +43,7 @@ namespace TH_Buoi2
                 tk.HOTEN1 = txtHoTen.Text;
                 tk.LAADMIN1 = chkLaAdmin.Checked;
                 tk.ANHDAIDIEN1 = txtAnhDaiDien.Text;
+                
                 tk.TRANGTHAI1 = chkTrangThai.Checked;
                 if (TaiKhoan_BUS.ThemTaiKhoan(tk))
                 {
@@ -64,7 +66,6 @@ namespace TH_Buoi2
         {
             if (e.CommandName == "ChonTK")
             {
-
                 btnThem.Visible = false;
                 btnSua.Visible = true;
                 btnSua.Enabled = true;

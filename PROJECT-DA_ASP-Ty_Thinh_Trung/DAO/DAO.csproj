@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="index_DAO.cs" />
+    <Compile Include="ChiTietSanPham_DAO.cs" />
+    <Compile Include="HoaDon_DAO.cs" />
     <Compile Include="SanPham_DAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

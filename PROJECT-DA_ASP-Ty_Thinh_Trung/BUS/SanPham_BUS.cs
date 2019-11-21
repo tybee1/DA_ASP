@@ -24,11 +24,15 @@ namespace BUS
                 return SanPham_DAO.ThemSanPham(sanPham_DTO);
             }
         }
-        public static List<SanPham_DTO> LayDSSanPham2()
+        public static List<SanPham_DTO> LoadDSDprodownList()
         {
-            return SanPham_DAO.LayDSSanPham2();
+            return SanPham_DAO.LoadDSDprodownList();
         }
-        public static bool CapNhatSanPham(SanPham_DTO sanPham_DTO)
+        public static List<SanPham_DTO> LoadDSLOAISP(int ID)
+        {
+            return SanPham_DAO.LoadDSLOAISP(ID);
+        }
+            public static bool CapNhatSanPham(SanPham_DTO sanPham_DTO)
         {
             if (!SanPham_DAO.KTMASPTONTAI(sanPham_DTO.MASP1))
                 return false;
