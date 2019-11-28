@@ -44,4 +44,27 @@
         </div>
     </div>
 
+    <div class="form-group">
+        <label for="text1" class="control-label col-lg-4">Hình ảnh 1</label>
+        <div class="col-lg-12">
+            <asp:FileUpload ID="fulHinhAnh1" runat="server" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="text1" class="control-label col-lg-4">Hình ảnh 2</label>
+        <div class="col-lg-12">
+            <asp:FileUpload ID="fulHinhAnh2" runat="server" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="text1" class="control-label col-lg-4">Hình ảnh 3</label>
+        <div class="col-lg-12">
+            <asp:FileUpload ID="fulHinhAnh3" runat="server" />
+        </div>
+    </div>
+
+
+
+    
+
 </asp:Content>

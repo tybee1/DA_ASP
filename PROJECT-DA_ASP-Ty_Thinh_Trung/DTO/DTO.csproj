@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietSanPham_DTO.cs" />
+    <Compile Include="GioHang_DTO.cs" />
     <Compile Include="HoaDon_DTO.cs" />
     <Compile Include="SanPham_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

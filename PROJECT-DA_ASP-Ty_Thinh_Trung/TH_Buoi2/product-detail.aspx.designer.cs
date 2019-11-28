@@ -15,6 +15,24 @@ namespace TH_Buoi2
     {
 
         /// <summary>
+        /// lblTenSanPham2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTenSanPham2;
+
+        /// <summary>
+        /// imgHinhAnh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgHinhAnh;
+
+        /// <summary>
         /// lblTenSanPham control.
         /// </summary>
         /// <remarks>
@@ -75,6 +93,6 @@ namespace TH_Buoi2
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddCat;
+        protected global::System.Web.UI.WebControls.LinkButton btnAddCat;
     }
 }

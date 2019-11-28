@@ -14,9 +14,14 @@ namespace BUS
         {
             return ChiTietSanPham_DAO.LayDSSanPham();
         }
-        public static bool LayCTSPTheoMa(ChiTietSanPham_DTO MASP)
+        public static DataTable LayCTSPTheoMa(int MASP)
         {
+            
             return ChiTietSanPham_DAO.LayCTSPTheoMa(MASP);
+        }
+        public static List<ChiTietSanPham_DTO> LoadDSDropdownList()
+        {
+            return ChiTietSanPham_DAO.LoadDSDropdownList();
         }
     }
 }

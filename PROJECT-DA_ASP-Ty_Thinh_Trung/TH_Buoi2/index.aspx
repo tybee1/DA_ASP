@@ -11,12 +11,49 @@
             <div class="header-cart-title flex-w flex-sb-m p-b-8">
                 <span class="mtext-103 cl2">Your Cart
                 </span>
-
                 <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
                     <i class="zmdi zmdi-close"></i>
                 </div>
             </div>
             <div class="header-cart-content flex-w js-pscroll">
+                 <ul class="header-cart-wrapitem w-full">
+             <asp:Repeater ID="rptGioHang" runat="server">
+                <ItemTemplate>
+                     
+               
+                    <li class="header-cart-item flex-w flex-t m-b-12">
+                        <div class="header-cart-item-img">
+                            <asp:Image ID="ImgGioHang" runat="server" ImageUrl='<%# "images/" + Eval("HINHANH_1") %>' />
+                        </div>
+                        <div class="header-cart-item-txt p-t-8">
+                            <asp:Label ID="lblTenSanPham" runat="server" CssClass="header-cart-item-name m-b-18 hov-cl1 trans-04" Text='<%# Eval("TENSP") %>'></asp:Label>
+
+                            <span class="header-cart-item-info">
+                                <asp:Label ID="lblGiaTien" runat="server" Text='<%#"$" + Eval("GIATIEN") %>'></asp:Label>
+                            </span>
+                        </div>
+                    </li>
+ 
+                
+                </ItemTemplate>
+            </asp:Repeater>
+                     </ul>
+                <div class="w-full">
+
+                    <div class="header-cart-total w-full p-tb-40">
+                      Tổng tiền:$<asp:Label ID="lblTongTien" runat="server"  Text="0"></asp:Label> 
+                    </div>
+
+                    <div class="header-cart-buttons flex-w w-full">
+                        <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">View Cart
+                        </a>
+
+                        <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">Check Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <%-- <div class="header-cart-content flex-w js-pscroll">
                 <ul class="header-cart-wrapitem w-full">
                     <li class="header-cart-item flex-w flex-t m-b-12">
                         <div class="header-cart-item-img">
@@ -73,7 +110,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>--%>
         </div>
     </div>
 
@@ -464,14 +501,15 @@
         <div class="row isotope-grid">
             <asp:Repeater ID="rptSanPham" runat="server" OnItemCommand="rptSanPham_ItemCommand">
                 <ItemTemplate>
+                  
                     <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 
                         <!-- Block2 -->
                         <div class="block2">
                             <div class="block2-pic hov-img0">
                                 <asp:Image ID="imgAnhMinhHoa" runat="server" ImageUrl='<%# "images/" + Eval("HINHANH_1") %>' />
-                                <asp:LinkButton ID="lbtChiTietSanPham" runat="server" CommandName="XemCT" CommandArgument='<%# Eval("MASP") %>' CssClass="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 " OnClick="lbtChiTietSanPham_Click" >Quit view</asp:LinkButton>
-
+                                <%--<asp:LinkButton ID="lbtChiTietSanPham" runat="server" CommandName="XemCT" CommandArgument='<%# Eval("MASP") %>' CssClass="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1 " OnClick="lbtChiTietSanPham_Click" >Quit view</asp:LinkButton>--%>
+                                <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "product-detail.aspx?MASP="+Eval("MASP") %>' runat="server" CssClass="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">Quit view</asp:HyperLink>
                                 </a>
                             </div>
 
@@ -482,7 +520,7 @@
                                     </a>
 
                                     <span class="stext-105 cl3">
-                                        <asp:Label ID="lblGiaTien" runat="server" Text='<%# Eval("GIATIEN") %>'></asp:Label>
+                                        <asp:Label ID="lblGiaTien" runat="server" Text='<%#"$" + Eval("GIATIEN") %>'></asp:Label>
                                     </span>
                                 </div>
 
@@ -491,7 +529,7 @@
                                         <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
                                         <img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
                                     </a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                             </div>
                         </div>
@@ -572,7 +610,7 @@
                                     <div class="col-md-6 col-lg-5 p-b-30">
                                         <div class="p-r-50 p-t-5 p-lr-0-lg">
                                             <h4 class="mtext-105 cl2 js-name-detail p-b-14">
-                                                <asp:Label ID="lblTenSanPham" runat="server" Text="Lightweight Jacket"></asp:Label>
+                                                <asp:Label ID="lblTenSanPham" runat="server" Text=""></asp:Label>
                                             </h4>
 
                                             <span class="mtext-106 cl2">

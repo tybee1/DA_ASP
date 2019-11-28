@@ -15,7 +15,7 @@
 			</a>
 
 			<span class="stext-109 cl4">
-				Lightweight Jacket
+			   <asp:Label ID="lblTenSanPham2" runat="server" Text=""></asp:Label>
 			</span>
 		</div>
 	</div>
@@ -28,21 +28,22 @@
 				<div class="col-md-6 col-lg-7 p-b-30">
 					<div class="p-l-25 p-r-30 p-lr-0-lg">
 						<div class="wrap-slick3 flex-sb flex-w">
-							<div class="wrap-slick3-dots"></div>
+						<%--	<div class="wrap-slick3-dots"></div>--%>
 							<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
 							<div class="slick3 gallery-lb">
-								<div class="item-slick3" data-thumb="images/product-detail-01.jpg">
+								<div class="item-slick3" <%--data-thumb="images/product-detail-01.jpg"--%>>
 									<div class="wrap-pic-w pos-relative">
-										<img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
+										<%--<img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">--%>
+                                        <asp:Image ID="imgHinhAnh" runat="server" ImageUrl='<%# "images/" + Eval("HINHANH_1") %>' />
 
-										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
-											<i class="fa fa-expand"></i>
-										</a>
+<%--										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">--%>
+											<%--<i class="fa fa-expand"></i>--%>
+										<%--</a>--%>
 									</div>
 								</div>
 
-								<div class="item-slick3" data-thumb="images/product-detail-02.jpg">
+								<%--<div class="item-slick3" data-thumb="images/product-detail-02.jpg">
 									<div class="wrap-pic-w pos-relative">
 										<img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
 
@@ -54,13 +55,13 @@
 
 								<div class="item-slick3" data-thumb="images/product-detail-03.jpg">
 									<div class="wrap-pic-w pos-relative">
-										<img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+										<img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">zz
 
 										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
 											<i class="fa fa-expand"></i>
 										</a>
 									</div>
-								</div>
+								</div>--%>
 							</div>
 						</div>
 					</div>
@@ -69,15 +70,15 @@
 				<div class="col-md-6 col-lg-5 p-b-30">
 					<div class="p-r-50 p-t-5 p-lr-0-lg">
 						<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-							 <asp:Label ID="lblTenSanPham" runat="server" Text="Lightweight Jacket"></asp:Label>
+							 <asp:Label ID="lblTenSanPham" runat="server" Text=""></asp:Label>
 						</h4>
                        
 						<span class="mtext-106 cl2">
-							<asp:Label ID="lblGiaTien" runat="server" Text="57.87"></asp:Label>
+							$<asp:Label ID="lblGiaTien" runat="server" Text=""></asp:Label>
 						</span>
 
 						<p class="stext-102 cl3 p-t-23">
-                            <asp:Label ID="lblMoTa" runat="server" Text="Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat."></asp:Label>
+                            <asp:Label ID="lblMoTa" runat="server" Text=""></asp:Label>
 							
 						</p>
 						
@@ -119,7 +120,9 @@
 											<i class="fs-16 zmdi zmdi-plus"></i>
 										</div>
 									</div>
-                                    <asp:Button ID="btnAddCat" runat="server" CssClass="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" Text="Add to cart" />
+                                    <asp:LinkButton ID="btnAddCat" runat="server" OnClick="btnAddCat_Click" CssClass="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail"  CommandName="ThemGH" CommandArgument='<%# Eval("MaSP") %>'>Add to cart</asp:LinkButton>
+
+                                   <%-- <asp:Button ID="btnAddCat" runat="server" CssClass="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" Text="Add to cart" />--%>
 								</div>
 							</div>	
 						</div>

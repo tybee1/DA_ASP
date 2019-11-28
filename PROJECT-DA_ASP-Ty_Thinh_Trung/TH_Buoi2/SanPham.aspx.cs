@@ -12,6 +12,7 @@ namespace TH_Buoi2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!Page.IsPostBack)
             {
                 LoadDanhSachSanPham();
@@ -34,10 +35,6 @@ namespace TH_Buoi2
             grvSanPham.DataBind();
         }
 
-        //protected void btnThemSanPham_Click(object sender, EventArgs e)
-        //{
-           
-        //}
 
         protected void btnThemSanPham_Click1(object sender, EventArgs e)
         {

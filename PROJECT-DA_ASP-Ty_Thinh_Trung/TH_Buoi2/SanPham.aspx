@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="SanPham.aspx.cs" Inherits="TH_Buoi2.SanPham1" %>
+<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -16,8 +17,9 @@
     </div>
     <div class="form-group">
         <label for="text2" class="control-label col-lg-4">Mô tả</label>
-        <div class="col-lg-12">
-            <asp:TextBox ID="txtMoTa" runat="server" CssClass="form-control"></asp:TextBox>
+        <div class="col-lg-6">
+         <%--   <asp:TextBox ID="txtMoTa" runat="server" CssClass="form-control"></asp:TextBox>--%>
+                   <CKEditor:CKEditorControl ID="txtMoTa" runat="server" BasePath="~/ckeditor/" ClientIDMode="Static"></CKEditor:CKEditorControl>
         </div>
     </div>
      <div class="form-group">

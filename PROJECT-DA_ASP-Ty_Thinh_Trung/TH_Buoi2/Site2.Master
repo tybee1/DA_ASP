@@ -190,7 +190,7 @@
                                     <div class="dropdown-divider"></div>
 
                                     <!-- item-->                                                                
-                                    <asp:Button ID="Button1"  runat="server" CssClass="fe-log-out dropdown-item notify-item " Text="Log out"  OnClick="Button1_Click"  href="javascript:void(0);"/>                                                                           
+                                    <asp:Button ID="Button1"  runat="server" CssClass="fe-log-out dropdown-item notify-item " Text="Log out"  OnClick="Button1_Click" CausesValidation="false"  href="javascript:void(0);"/>                                                                           
                                 </div>
                             </li>
 

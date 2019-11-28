@@ -39,7 +39,7 @@ namespace TH_Buoi2
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMoTa;
+        protected global::CKEditor.NET.CKEditorControl txtMoTa;
 
         /// <summary>
         /// DropDownList1 control.

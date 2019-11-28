@@ -13,6 +13,7 @@ namespace TH_Buoi2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          
             if (!Page.IsPostBack)
             {
                 ddlTimKiem.DataSource = SanPham_BUS.LoadDSDprodownList();
@@ -21,7 +22,17 @@ namespace TH_Buoi2
                 //ddlTimKiem.AutoPostBack = true;
                 ddlTimKiem.DataBind();
                 LoadDSSanPham();
+                ThemGioHang();
             }
+        }
+        public void ThemGioHang()
+        {
+            string TENTK = "admin";
+            DataTable dt = GioHang_BUS.LayGH(TENTK);
+            rptGioHang.DataSource = dt;
+            rptGioHang.DataBind();
+            lblTongTien.Text = GioHang_BUS.TinhTongTienGH(TENTK).ToString();
+            
         }
         public void LoadDSSanPham()
         {
@@ -45,25 +56,25 @@ namespace TH_Buoi2
 
         protected void rptSanPham_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-         if(e.CommandName== "XemCT")
-            {
-                ChiTietSanPham_DTO CT = new ChiTietSanPham_DTO();   
-                CT.TENSP = e.CommandArgument.ToString();
-                CT.MASP = Convert.ToInt32(e.CommandArgument);
-                if(ChiTietSanPham_BUS.LayCTSPTheoMa(CT))
-                {
-                    Response.Write("<script>alert('Thêm thành công')</script>");
-                }
-                else
-                {
-                    Response.Write("<script>alert('Thêm thất bại')</script>");
-                }
-            }
+         //if(e.CommandName== "XemCT")
+         //   {
+         //       ChiTietSanPham_DTO CT = new ChiTietSanPham_DTO();   
+         //       CT.TENSP = e.CommandArgument.ToString();
+         //       CT.MASP = Convert.ToInt32(e.CommandArgument);
+         //       if(ChiTietSanPham_BUS.LayCTSPTheoMa(CT))
+         //       {
+         //           Response.Write("<script>alert('Thêm thành công')</script>");
+         //       }
+         //       else
+         //       {
+         //           Response.Write("<script>alert('Thêm thất bại')</script>");
+         //       }
+         //   }
         }
 
         protected void lbtChiTietSanPham_Click(object sender, EventArgs e)
         {
-            Response.Redirect("product-detail.aspx");
+            //Response.Redirect("product-detail.aspx");
             
         }
     }

@@ -64,7 +64,8 @@
     <div class="form-group">
         <label for="text7" class="control-label col-lg-4">Ảnh đại diện</label>
         <div class="col-lg-12">
-            <asp:TextBox ID="txtAnhDaiDien" runat="server"></asp:TextBox>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+          
         </div>
     </div>
 
@@ -78,7 +79,7 @@
     <div class="col-lg-6">
         <asp:Button ID="btnThem" runat="server" Text="Thêm" CssClass="col-lg-2 btn-lg btn-success" OnClick="btnThem_Click" />
         <asp:Button ID="btnSua" runat="server" Text="Sửa" CssClass="col-lg-2 btn-lg btn-warning" OnClick="btnSua_Click" Visible="True" />
-        <asp:Button ID="btnHuyBo" runat="server" Text="Hủy bỏ" CssClass="col-lg-2 btn-lg btn-default" OnClick="btnHuyBo_Click"/>
+        <asp:Button ID="btnHuyBo" runat="server" Text="Hủy bỏ" CssClass="col-lg-2 btn-lg btn-default" OnClick="btnHuyBo_Click" CausesValidation="false"/>
     </div>
 
     <div class="col-lg-12">
@@ -91,7 +92,7 @@
                 <asp:BoundField DataField="DIACHI1" HeaderText="Địa Chỉ" />
                 <asp:BoundField DataField="HOTEN1" HeaderText="Họ tên" />
                 <asp:CheckBoxField DataField="LAADMIN1" HeaderText="Là Admin" />
-                <asp:BoundField DataField="ANHDAIDIEN1" HeaderText="Ảnh đại diện" />
+                <asp:BoundField DataField="ANHDAIDIEN1" HeaderText="Ảnh đại diện"  />
                 <asp:CheckBoxField DataField="TRANGTHAI1" HeaderText="Trạng thái" />
                 <asp:TemplateField HeaderText="Chọn" ShowHeader="False">
                     <ItemTemplate>

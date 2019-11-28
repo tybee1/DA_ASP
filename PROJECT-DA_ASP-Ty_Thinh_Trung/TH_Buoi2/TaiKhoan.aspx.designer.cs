@@ -150,13 +150,13 @@ namespace TH_Buoi2
         protected global::System.Web.UI.WebControls.CheckBox chkLaAdmin;
 
         /// <summary>
-        /// txtAnhDaiDien control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAnhDaiDien;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
         /// chkTrangThai control.

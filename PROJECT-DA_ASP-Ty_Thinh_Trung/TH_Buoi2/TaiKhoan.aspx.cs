@@ -42,8 +42,14 @@ namespace TH_Buoi2
                 tk.DIACHI1 = txtDiaChi.Text;
                 tk.HOTEN1 = txtHoTen.Text;
                 tk.LAADMIN1 = chkLaAdmin.Checked;
-                tk.ANHDAIDIEN1 = txtAnhDaiDien.Text;
-                
+                if(FileUpload1.FileContent.Length>0)
+                {
+                    if(FileUpload1.FileName.EndsWith(".jpeg") || FileUpload1.FileName.EndsWith(".jpg") || FileUpload1.FileName.EndsWith(".png") || FileUpload1.FileName.EndsWith(".git"))
+                    {
+                        FileUpload1.SaveAs(Server.MapPath("images/")+ FileUpload1.FileName);
+                    }
+                }
+                tk.ANHDAIDIEN1 = FileUpload1.FileName;
                 tk.TRANGTHAI1 = chkTrangThai.Checked;
                 if (TaiKhoan_BUS.ThemTaiKhoan(tk))
                 {
@@ -82,7 +88,6 @@ namespace TH_Buoi2
                     txtDiaChi.Text = tk.DIACHI1;
                     txtHoTen.Text = tk.HOTEN1;
                     chkLaAdmin.Checked = tk.LAADMIN1;
-                    txtAnhDaiDien.Text = tk.ANHDAIDIEN1;
                     chkTrangThai.Checked = tk.TRANGTHAI1;
                 }
             }
@@ -112,7 +117,9 @@ namespace TH_Buoi2
             tk.DIACHI1 = txtDiaChi.Text;
             tk.HOTEN1 = txtHoTen.Text;
             tk.LAADMIN1 = chkLaAdmin.Checked;
-            tk.ANHDAIDIEN1 = txtAnhDaiDien.Text;
+            //tk.ANHDAIDIEN1 = txtAnhDaiDien.Text;
+
+            tk.ANHDAIDIEN1 = FileUpload1.FileName;
             tk.TRANGTHAI1 = chkTrangThai.Checked;
             if (TaiKhoan_BUS.CapNhatTaiKhoan(tk))
             {
@@ -129,8 +136,7 @@ namespace TH_Buoi2
         }
 
         protected void btnHuyBo_Click(object sender, EventArgs e)
-        {      
-               
+        {           
                  btnThem.Visible = true;
                  XoaFrom();
                 btnHuyBo.Visible = false;
@@ -145,9 +151,15 @@ namespace TH_Buoi2
             txtSDT.Text = "";
             txtDiaChi.Text = "";
             txtEmail.Text = "";
-            txtAnhDaiDien.Text = "";
             chkLaAdmin.Checked = false;
             chkTrangThai.Checked = false;
+        }
+        protected void Intem(object sender,FormViewInsertedEventArgs e)
+        {
+            FileUpload f = (FileUpload)FindControl("FileUpload1");
+            String path = Server.MapPath("~/images/");
+            f.PostedFile.SaveAs(path + f.FileName);
+            grvAccount.DataSource = f.FileName;
         }
     }
 }

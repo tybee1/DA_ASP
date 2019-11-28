@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietSanPham_DAO.cs" />
+    <Compile Include="GioHang_DAO.cs" />
     <Compile Include="HoaDon_DAO.cs" />
     <Compile Include="SanPham_DAO.cs" />
     <Compile Include="DataProvider.cs" />
